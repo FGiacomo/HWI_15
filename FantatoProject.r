@@ -67,10 +67,10 @@ library(sandwich)
 coeftest(reg2, vcov=vcovHC(reg1, type="HC1"))#coeff test aggiunge robust st. errors
 summary(reg2)
 
-robust_se <- coeftest(reg2, vcov. = vcovHC(reg1, type = "HC1"))[, "Std. Error"]
+#robust_se <- coeftest(reg2, vcov. = vcovHC(reg1, type = "HC1"))[, "Std. Error"]
 
 # Stampa l'errore standard robusto per il coefficiente su female
-print("Robust st. Error:"+robust_se["female"])
+#print("Robust st. Error:"+robust_se["female"])
 
 
 #Punto C
